@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const MotionH1 = motion<'h1'>('h1');
+const MotionH1 = motion.h1;
 
 export default function Home() {
   return (
