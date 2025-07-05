@@ -9,6 +9,9 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+const MotionH1 = motion.h1;
+const MotionP = motion.p;
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0d0d0d] text-[#00ffff] font-mono px-6 py-10 relative overflow-hidden">
@@ -16,22 +19,22 @@ export default function Home() {
       <div className="absolute inset-0 bg-gradient-radial from-[#ff00ff33] to-[#0d0d0d] animate-pulse z-0"></div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <motion.h1
+        <MotionH1
           className="text-4xl md:text-6xl font-bold text-[#FF00FF] mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           goonhunter
-        </motion.h1>
-        <motion.p
+        </MotionH1>
+        <MotionP
           className="text-lg md:text-xl text-[#FFDE59]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           Walking the tightrope between signal and silence, one protocol at a time.
-        </motion.p>
+        </MotionP>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Projects Card */}
