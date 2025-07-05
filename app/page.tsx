@@ -10,6 +10,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const MotionH1 = motion.h1;
+const MotionP = motion.p;
 
 export default function Home() {
   return (
